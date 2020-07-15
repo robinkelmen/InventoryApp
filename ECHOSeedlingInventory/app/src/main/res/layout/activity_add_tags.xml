@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTags">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tag_field"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="134dp"
+        android:text="Add Tag"
+        android:textSize="@dimen/field_title_size" />
+
+    <EditText
+        android:id="@+id/tag_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="149dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="e.g Medicinal" />
+
+    <Button
+
+        android:id="@+id/add_tag"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="47dp"
+        android:drawableTop="@drawable/quick_add"
+        android:text="add tag"
+        android:textSize="10dp" />
+</RelativeLayout>

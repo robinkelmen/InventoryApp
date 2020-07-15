@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="1dp"
+        >
+        <CheckedTextView
+            android:id="@+id/Sales_check"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sales (This Month)"
+            android:textColor="#3d484d"
+            android:paddingLeft="14dp"
+            android:paddingTop="5dp"
+            android:layout_gravity="center">
+
+        </CheckedTextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="1dp">
+        <CheckedTextView
+            android:id="@+id/Donations_check"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donations (This Month)"
+            android:textColor="#3d484d"
+            android:paddingLeft="14dp"
+            android:paddingTop="5dp"
+            android:layout_gravity="center">
+
+        </CheckedTextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="1dp">
+        <CheckedTextView
+
+            android:id="@+id/Deaths_check"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deaths (This Month)"
+            android:textColor="#3d484d"
+            android:paddingLeft="14dp"
+            android:paddingTop="5dp"
+            android:layout_gravity="center">
+
+        </CheckedTextView>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="1dp">
+
+    <CheckedTextView
+        android:id="@+id/Full_inventory_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:paddingLeft="14dp"
+        android:paddingTop="5dp"
+        android:text="Full Inventory"
+        android:textColor="#3d484d">
+
+
+    </CheckedTextView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

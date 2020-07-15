@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/sale_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/add_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="66dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:drawableTop="@drawable/ic_launcher_sale"
+        android:text="@string/button_record_sale" />
+
+    <Button
+        android:id="@+id/death_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/add_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="218dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:drawableTop="@drawable/ic_launcher_remove"
+        android:text="@string/button_record_death" />
+
+    <Button
+        android:id="@+id/add_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="218dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:drawableTop="@drawable/ic_launcher_add"
+        android:text="@string/button_add_items" />
+
+    <Button
+        android:id="@+id/edit_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/death_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="61dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:drawableTop="@drawable/ic_launcher_edit"
+        android:text="@string/button_edit_items" />
+
+    <Button
+        android:id="@+id/add_tags"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/death_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="414dp"
+        android:layout_marginEnd="214dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:drawableTop="@drawable/quick_add_name"
+        android:text="@string/button_add_tags" />
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+</RelativeLayout>

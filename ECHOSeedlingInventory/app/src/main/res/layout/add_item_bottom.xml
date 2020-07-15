@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+
+    <Button
+        android:id="@+id/expand_tags_butt"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:onClick="showTags"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:text="Select Tags"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@+id/show_tags_add_item"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/show_tags_add_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ael_duration="500"
+        app:ael_expanded="false"
+        app:ael_interpolator="decelerate"
+        app:ael_orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <include layout="@layout/add_item_tag_recycler" />
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    <Button
+        android:id="@+id/submit_new_item"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/cardview_light_background"
+        android:text="submit"
+        app:layout_constraintBottom_toBottomOf="@+id/show_tags_add_item"
+        tools:layout_editor_absoluteX="2dp" />
+    <Button
+        android:id="@+id/cancel_new_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/submit_new_item"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/cancel_color"
+        android:text="cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/show_tags_add_item"
+        tools:layout_editor_absoluteX="1dp" />
+
+</LinearLayout>

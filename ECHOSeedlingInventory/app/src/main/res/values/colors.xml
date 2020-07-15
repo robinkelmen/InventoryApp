@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="title_add_item">#000000</color>
+    <color name="hint_text">#a3a2a0</color>
+    <color name="field_text">#61605f</color>
+    <color name="cancel_color">#c4b9b3</color>
+    <color name="Green">#34c745</color>
+    <color name="Red">#e63045</color>
+    <color name="echogreen">#006327</color>
+    <color name="white">#ffff</color>
+    <color name="offwhiteblue">#f5fff8</color>
+</resources>

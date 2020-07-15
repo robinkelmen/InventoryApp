@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ECHO Seedling Inventory</string>
+    <string name="title_reports">Reports</string>
+    <string name="title_inventory">Inventory</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tab_List">LIST</string>
+    <string name="tab_Manage">MANAGE</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="button_record_sale">Record Sale</string>
+    <string name="button_record_death">Record Death</string>
+    <string name="button_add_tags">Add Tags</string>
+    <string name="button_add_items">Add Item</string>
+    <string name="button_edit_items">Edit Item</string>
+    <string name="title_add_item">Add New Item</string>
+    <string name="enter_name">Enter Item Name</string>
+    <string name="hint_enter_name">Plant Name</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+</resources>

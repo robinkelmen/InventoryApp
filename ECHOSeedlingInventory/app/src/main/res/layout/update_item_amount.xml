@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/ind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="143dp"
+        android:text="Indicate Number of Items"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Currently Available "
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/update_item_amount_text"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:text="55"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <NumberPicker
+        android:id="@+id/update_amount_picker"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/ind"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/update_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Item"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:padding="20dp"
+        />
+    <Button
+        android:id="@+id/update_amount_butt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Increase Item Amount "
+        android:textAlignment="viewStart"
+        android:onClick="showNumberPicker"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+        style="?android:attr/borderlessButtonStyle"
+
+        />
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/edit_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ael_duration="500"
+        app:ael_expanded="false"
+        app:ael_interpolator="decelerate"
+        app:ael_orientation="vertical">
+        <include layout="@layout/update_item_amount"/>
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <Button
+        android:id="@+id/update_other_name_butt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other Names"
+        android:textAlignment="viewStart"
+        android:onClick="showOtherNames"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+        style="?android:attr/borderlessButtonStyle"
+
+        >
+
+
+    </Button>
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expand_other_names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ael_duration="500"
+        app:ael_expanded="false"
+        app:ael_interpolator="decelerate"
+        app:ael_orientation="vertical">
+        <include layout="@layout/update_names_container" />
+
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    <Button
+        android:id="@+id/update_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price and Low Amount"
+        android:textAlignment="viewStart"
+        android:onClick="showPriceAndLowCount"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expand_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ael_duration="500"
+        app:ael_expanded="false"
+        app:ael_interpolator="decelerate"
+        app:ael_orientation="vertical">
+       <include layout="@layout/update_price_container"/>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    <Button
+        android:id="@+id/update_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tags"
+        android:textAlignment="viewStart"
+        android:onClick="showCheckedUncheckedTags"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+        style="?android:attr/borderlessButtonStyle"/>
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expand_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ael_duration="500"
+        app:ael_expanded="false"
+        app:ael_interpolator="decelerate"
+        app:ael_orientation="vertical">
+        <include layout="@layout/update_tags_container"/>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <include layout="@layout/update_submit_container" />
+
+
+
+
+
+
+
+
+</LinearLayout></ScrollView>

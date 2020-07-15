@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/ic_launcher_sale" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="284dp"
+        android:text="Indicate Number Sold"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:text="Currently Available "
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/list_item_amount_text"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp"
+        android:text="55"
+        android:textAlignment="center"
+        android:textSize="35dp" />
+
+    <NumberPicker
+        android:id="@+id/amount_picker"
+        android:layout_width="100dp"
+        android:layout_height="167dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="338dp" />
+
+
+</RelativeLayout>
